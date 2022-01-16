@@ -39,6 +39,8 @@ This step involves configuring custom .cfg, obj.data, obj.names, train.txt and
 test.txt files.
 
   a. Configuring all the needed variables based on class in the config file
+  
   b. Creating obj.names and obj.data files
+  
   c. Configuring train.txt and test.txt
 
