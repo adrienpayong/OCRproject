@@ -33,4 +33,12 @@ We'll use these pretrained weights to see how they perform on some of the images
 **3. Creating display functions to display the predicted class**
 **4. Data collection and Labeling with LabelIm**
 To build a custom object detector, we'll need a large dataset of images and labels to train the model, so we'll use annotation tool LabelImg  to label our images.
+**5. Configuring Files for Training**
+
+This step involves configuring custom .cfg, obj.data, obj.names, train.txt and
+test.txt files.
+
+  a. Configuring all the needed variables based on class in the config file
+  b. Creating obj.names and obj.data files
+  c. Configuring train.txt and test.txt
 
