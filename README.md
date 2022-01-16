@@ -19,11 +19,25 @@ This project is applicable to any field that is currently manually going through
 - Text Recognition : Tesseract OCR
 - Environment: Google Colab
 
+## Topics Covered in this Project
+
+All of the data science tools and techniques that you will use to implement this project's solution are detailed below. 
+
 ## step-by-step guide on building OCR from scratch in Python:
 
 **1. Setting up and Installation to run Yolov4**
 
 We'll be downloading AlexeyAB's famous repository, adjusting the Makefile to enable OPENCV and GPU for darknet, and then building darknet. 
+
+## Computer Vision using OpenCV
+
+OpenCV is one of Python's most popular image processing and computer vision libraries.
+
+Any image must be processed before being served to the object detection model YOLO, and you will use OpenCV to do so.
+
+Furthermore, various OpenCV library functions are used to visualize the YOLO model's testing results. 
+
+## Coding with Google Colab
 
 **2. Downloading pre-trained YOLOv4 weights**
 
