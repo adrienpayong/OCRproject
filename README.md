@@ -26,6 +26,5 @@ This project is applicable to any field that is currently manually going through
 We'll be downloading AlexeyAB's famous repository, adjusting the Makefile to enable OPENCV and GPU for darknet, and then building darknet. 
 
 2. Downloading pre-trained YOLOv4 weights
-3. 
 YOLOv4 has already been trained on the coco dataset, which contains 80 classes that it can predict.
 We'll use these pretrained weights to see how they perform on some of the images. 
