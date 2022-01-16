@@ -33,6 +33,7 @@ We'll use these pretrained weights to see how they perform on some of the images
 **3. Creating display functions to display the predicted class**
 **4. Data collection and Labeling with LabelIm**
 To build a custom object detector, we'll need a large dataset of images and labels to train the model, so we'll use annotation tool LabelImg  to label our images.
+
 **5. Configuring Files for Training**
 
 This step involves configuring custom .cfg, obj.data, obj.names, train.txt and
@@ -43,4 +44,19 @@ test.txt files.
   b. Creating obj.names and obj.data files
   
   c. Configuring train.txt and test.txt
+  
+**6. Download pre-trained weights for the convolutional layers**
+**7. Training Custom Object Detector**
+**8. Evaluating the model using Mean Average precision**
+**9. Predict image classes and save the co-ordinates separately**
+**10. Detecting text from the predicted class**
+
+        a. Importing pytesseract and setting environment variable for english trained
+data
+
+        b. Getting list of predicted files from the directory
+        
+        c. Using tesseract pretrained LSTM model to extract the text
+        
+        d. Fine tuning the LSTM model
 
