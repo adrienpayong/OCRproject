@@ -8,7 +8,7 @@ important classes from the invoices. They are:
 2. Billing Date
 3. Total amount
 
-## APPLICATIONS:
+## step-by-step guide on building OCR from scratch in Python:
 
 This project is applicable to any field that is currently manually going through all of the bills to jot them down in a ledger. 
 
