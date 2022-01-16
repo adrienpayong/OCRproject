@@ -51,12 +51,9 @@ test.txt files.
 **9. Predict image classes and save the co-ordinates separately**
 **10. Detecting text from the predicted class**
 
-        a. Importing pytesseract and setting environment variable for english trained
+   - Importing pytesseract and setting environment variable for english trained
 data
-
-        b. Getting list of predicted files from the directory
-        
-        c. Using tesseract pretrained LSTM model to extract the text
-        
-        d. Fine tuning the LSTM model
+   - Getting list of predicted files from the director
+   - Using tesseract pretrained LSTM model to extract the text
+   - Fine tuning the LSTM model
 
