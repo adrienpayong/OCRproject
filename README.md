@@ -21,10 +21,16 @@ This project is applicable to any field that is currently manually going through
 
 ## APPROACH:
 
-1. Setting up and Installation to run Yolov4
+**1. Setting up and Installation to run Yolov4**
 
 We'll be downloading AlexeyAB's famous repository, adjusting the Makefile to enable OPENCV and GPU for darknet, and then building darknet. 
 
-2. Downloading pre-trained YOLOv4 weights
+**2. Downloading pre-trained YOLOv4 weights**
+
 YOLOv4 has already been trained on the coco dataset, which contains 80 classes that it can predict.
 We'll use these pretrained weights to see how they perform on some of the images. 
+
+**3. Creating display functions to display the predicted class**
+**4. Data collection and Labeling with LabelIm**
+To build a custom object detector, we'll need a large dataset of images and labels to train the model, so we'll use annotation tool LabelImg  to label our images.
+
