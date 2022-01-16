@@ -8,7 +8,7 @@ important classes from the invoices. They are:
 2. Billing Date
 3. Total amount
 
-## step-by-step guide on building OCR from scratch in Python:
+## APPROACH:
 
 This project is applicable to any field that is currently manually going through all of the bills to jot them down in a ledger. 
 
@@ -31,7 +31,9 @@ YOLOv4 has already been trained on the coco dataset, which contains 80 classes t
 We'll use these pretrained weights to see how they perform on some of the images. 
 
 **3. Creating display functions to display the predicted class**
+
 **4. Data collection and Labeling with LabelIm**
+
 To build a custom object detector, we'll need a large dataset of images and labels to train the model, so we'll use annotation tool LabelImg  to label our images.
 
 **5. Configuring Files for Training**
