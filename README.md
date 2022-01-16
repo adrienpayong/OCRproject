@@ -32,10 +32,24 @@ We'll be downloading AlexeyAB's famous repository, adjusting the Makefile to ena
 ## Computer Vision using OpenCV
 
 OpenCV is one of Python's most popular image processing and computer vision libraries.
-
 Any image must be processed before being served to the object detection model YOLO, and you will use OpenCV to do so.
-
 Furthermore, various OpenCV library functions are used to visualize the YOLO model's testing results. 
+
+## Text Detection using YOLO
+
+YOLO v4 is an object detection model created by Alexey Bochkovskiy, Chien-Yao Wang, and Hong-Yuan Mark Liao, with the acronym YOLO standing for 'You Only Look Once.'
+Its humorous name derives from the algorithm's ability to identify all of the objects in an image with a single glance.
+That is one of the main reasons why the algorithm detects objects faster than RCNN methods.
+The YOLO technique will be used in this project to create a custom OCR using Python.
+The motivation for developing a custom OCR model is that YOLO can only detect 80 preset classes in the COCO dataset.
+As a result, this project will walk you through the transfer learning process of developing a YOLO-text-recognition model using the invoices dataset.
+As previously said, our custom OCR system will recognize three objects from invoice images: invoice number, Billing Date, and Total amount. 
+
+## OCR using Tessaract
+
+The system will recognize the important text classes from the invoices using YOLO, but to decode the information in the text, Optical Character Recognition must be used (OCR).
+Tessaract OCR is a tool that scans text and converts it to digital data quickly.
+You will learn how to use Tessaract OCR to create a custom OCR in Python in this project. 
 
 ## Coding with Google Colab
 
