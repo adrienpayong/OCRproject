@@ -19,7 +19,7 @@ This project is applicable to any field that is currently manually going through
 - Text Recognition : Tesseract OCR
 - Environment: Google Colab
 
-## step-by-step guide on building OCR from scratch in Python -:
+## step-by-step guide on building OCR from scratch in Python:
 
 **1. Setting up and Installation to run Yolov4**
 
