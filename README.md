@@ -46,9 +46,13 @@ test.txt files.
   c. Configuring train.txt and test.txt
   
 **6. Download pre-trained weights for the convolutional layers**
+
 **7. Training Custom Object Detector**
+
 **8. Evaluating the model using Mean Average precision**
+
 **9. Predict image classes and save the co-ordinates separately**
+
 **10. Detecting text from the predicted class**
 
    - Importing pytesseract and setting environment variable for english trained
