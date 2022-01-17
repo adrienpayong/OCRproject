@@ -146,6 +146,7 @@ os.environ["TESSDATA_PREFIX"] = 'C:/Users/being/Downloads/Invoice_pro/tesseract_
 
    - Using tesseract pretrained LSTM model to extract the text
 
-![source](https://github.com/adrienpayong/OCRproject/blob/main/Captureloop.PNG
+![source](https://github.com/adrienpayong/OCRproject/blob/main/Captureloop.PNG)
+
    - Fine tuning the LSTM model
 
