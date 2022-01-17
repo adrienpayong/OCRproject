@@ -1,4 +1,4 @@
-# BUSINESS OVERVIEW:
+# BUSINESS OVERVIEW
 People have relied on paper invoices for a long time, but everything has gone digital, including invoices.
 Reconciling digital invoices is currently a man-made task, but it can be automated to save men from spending hours scrolling through multiple invoices and noting things down in a ledger. This project deals with detecting three
 important classes from the invoices. They are:
@@ -149,4 +149,7 @@ os.environ["TESSDATA_PREFIX"] = 'C:/Users/being/Downloads/Invoice_pro/tesseract_
 ![source](https://github.com/adrienpayong/OCRproject/blob/main/Captureloop.PNG)
 
    - Fine tuning the LSTM model
+   
+     ![source](https://github.com/adrienpayong/OCRproject/blob/main/Capturefine.PNG)
+
 
