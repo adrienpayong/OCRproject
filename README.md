@@ -71,15 +71,64 @@ test.txt files.
   
   b. Creating obj.names and obj.data files
   
+  Create a new file called obj.names where you will have one class name per line in the same order as your classes.txt from the dataset generation step.
+  
+  ![source](https://github.com/adrienpayong/OCRproject/blob/main/Captureinv.PNG)
+  
+  You will also need to create a obj.data file and fill it in like this(change your class number accordingly.
+  This backup path is where we will save the weights to of our model throughout training. Upload obj.names and obj.data in data subfolder of darknet
+  
+   ![source](https://github.com/adrienpayong/OCRproject/blob/main/Captureinv1.PNG)
+  
   c. Configuring train.txt and test.txt
   
+  The last configuration files needed before we can begin to train our custom detector are the train.txt and test.txt files which will have paths to all our training images and valdidation images. To create the same we will be using two script for generating train and text text files.
+  
+  ```
+  !python /content/generate_train.py
+!python /content/generate_test.py
+```
 **6. Download pre-trained weights for the convolutional layers**
+
+This step downloads the weights for the convolutional layers of the YOLOv4 network. By using these weights it helps your custom object detector to be way more accurate and not have to train as long.
+```
+!wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
+```
 
 **7. Training Custom Object Detector**
 
+We are now ready to train our custom YOLOv4 object detector on Amount,Invoice Number and Date classes. So run the following command.( -dont_show flag stops chart from popping up since Colab Notebook can't open images on the spot, -map flag overlays mean average precision on chart to see the accuracy)
+```
+!./darknet detector train data/obj.data cfg/yolov4-obj.cfg yolov4.conv.137 -dont_show -map
+```
+
+If for some reason you get an error or your Colab goes idle during training, you have not lost your partially trained model and weights because every 100 iterations a weights file called yolov4-obj_last.weights is saved to content/backup/ folder.
+We can kick off training from our last saved weights file so that we don't have to restart!
+Just run the following command but with your backup location.
+
+```
+!./darknet detector train data/obj.data cfg/yolov4-obj.cfg /content/backup/yolov4-obj_last.weights -dont_show
+```
+
 **8. Evaluating the model using Mean Average precision**
 
+If you didn't run the training with the '-map- flag added then you can still find out the mAP of your model after training. Run the following command on any of the saved weights from the training to see the mAP value for that specific weight's file.
+```
+!./darknet detector map data/obj.data cfg/yolov4-obj.cfg /content/backup/yolov4-obj_last.weights
+```
+
 **9. Predict image classes and save the co-ordinates separately**
+
+Run your custom detector with this command
+```
+!./darknet detector test data/obj.data cfg/yolov4-obj.cfg /content/drive/MyDrive/yolov4-obj_best.weights /content/images/basic-invoice.png -thresh 0.4
+imShow('predictions.jpg')
+```
+
+You will get this at the end:
+
+![source](https://github.com/adrienpayong/OCRproject/blob/main/Capturefact.PNG)
+
 
 **10. Detecting text from the predicted class**
 
