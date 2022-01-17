@@ -132,17 +132,20 @@ You will get this at the end:
 
 **10. Detecting text from the predicted class**
 
-   - Importing pytesseract and setting environment variable for english trained
+   - Importing pytesseract and setting environment variable for english trained data
+   
 ```
 import pytesseract as p
 import os
 os.environ["TESSDATA_PREFIX"] = 'C:/Users/being/Downloads/Invoice_pro/tesseract_training/Tesseract-OCR/tessdata/'
 ```
-data
+
    - Getting list of predicted files from the director
 
 ![source](https://github.com/adrienpayong/OCRproject/blob/main/extract.PNG)
 
    - Using tesseract pretrained LSTM model to extract the text
+
+![source](https://github.com/adrienpayong/OCRproject/blob/main/Captureloop.PNG
    - Fine tuning the LSTM model
 
