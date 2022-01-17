@@ -152,6 +152,6 @@ os.environ["TESSDATA_PREFIX"] = 'C:/Users/being/Downloads/Invoice_pro/tesseract_
    
      ![source](https://github.com/adrienpayong/OCRproject/blob/main/Capturefine.PNG)
      
-    - Link: ![Class detection invoice](https://github.com/adrienpayong/OCRproject/blob/main/CLASS_DETECTION_INVOICE.ipynb)
-    - Link1: ![image to text conversion](https://github.com/adrienpayong/OCRproject/blob/main/Image_to_Text_Conversion(Tesseract).ipynb)
+  - Link: ![Class detection invoice](https://github.com/adrienpayong/OCRproject/blob/main/CLASS_DETECTION_INVOICE.ipynb)
+  - Link1: ![image to text conversion](https://github.com/adrienpayong/OCRproject/blob/main/Image_to_Text_Conversion(Tesseract).ipynb)
 
